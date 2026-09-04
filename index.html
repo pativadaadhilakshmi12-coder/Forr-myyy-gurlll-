@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Harshuuu ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffd6e7, #fff5f8);
+  overflow-x: hidden;
+  color: #5c2340;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  background: rgba(255,255,255,0.88);
+  padding: 30px 22px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(150,50,90,0.2);
+  animation: appear 1s ease;
+}
+
+.flower {
+  font-size: 45px;
+  animation: float 2s infinite ease-in-out;
+}
+
+h1 {
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 15px;
+  border: none;
+  padding: 15px 24px;
+  border-radius: 30px;
+  background: #ff5c91;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  box-shadow: 0 7px 15px rgba(255,92,145,0.3);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#gift {
+  display: none;
+  animation: appear 1s ease;
+}
+
+.message {
+  margin-top: 25px;
+  text-align: left;
+  background: #fff0f6;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.neet {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #ffe3ed;
+}
+
+.neet h2 {
+  margin-top: 0;
+}
+
+.emoji {
+  position: fixed;
+  bottom: -40px;
+  font-size: 30px;
+  animation: rise 5s linear forwards;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(0) scale(0.7) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-110vh) scale(1.3) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="card">
+
+<div class="flower">🌸💗🌸</div>
+
+<h1>For Harshuuu ❤️</h1>
+
+<p class="subtitle">
+I made a little something for youuu 🫣❤️
+<br>
+Tap the buttonnn 👇
+</p>
+
+<button onclick="openGift()">🎁 Open Your Gift</button>
+
+<div id="gift">
+
+<div class="message">
+
+<p>
+Harshuuu ❤️
+</p>
+
+<p>
+Don't worryyy so much about NEET 2027 okayyy 🥺🫂 I know how hardworking and smart you are, and I genuinely believe you can do thisss. ❤️
+</p>
+
+<p>
+I'm always gonna be there with you through all of it. And yesss 😤📚 I'll keep forcing you to read moreee and stay focused 😂 Don't mind me if I keep irritating you with “go studyyy” every time 😭❤️ I'm only doing it because I want to see you achieve everything you're dreaming of.
+</p>
+
+<p>
+Whenever you feel stressed or scared, just remember you don't have to deal with it alone. I'll motivate you, support you, listen to you, and keep reminding you that <strong>you are capable of thisss.</strong> 🫂❤️
+</p>
+
+<p>
+Don't worry about the whole NEET journey right now. Just keep doing your best every dayyy. I'll be right here cheering for you all the wayyy. ❤️🥹
+</p>
+
+<p>
+Nowww Harshuuu 😤📖 enough worryinggg… go studyyy, future doctorrr 🩺❤️😂
+</p>
+
+</div>
+
+<div class="neet">
+
+<h2>📚 NEET 2027 MODE: ON 😤🔥</h2>
+
+<p>
+Study hardddd 💪📖<br>
+Believe in yourself ❤️<br>
+Don't give up when it gets difficult 🫂<br>
+And rememberrr...
+</p>
+
+<h3>
+YOU GOT THISSSS HARSHUUU!!! 🥹❤️🔥
+</h3>
+
+</div>
+
+<p style="margin-top:25px;">
+🌷 💋🥰💎💗♥️ 🌷
+</p>
+
+</div>
+
+</div>
+</div>
+
+<script>
+
+function openGift() {
+  document.getElementById("gift").style.display = "block";
+
+  const emojis = [
+    "💋",
+    "🥰",
+    "🌷",
+    "💎",
+    "💗",
+    "♥️"
+  ];
+
+  for (let i = 0; i < 35; i++) {
+    let emoji = document.createElement("div");
+
+    emoji.className = "emoji";
+    emoji.innerHTML =
+      emojis[Math.floor(Math.random() * emojis.length)];
+
+    emoji.style.left = Math.random() * 100 + "vw";
+    emoji.style.animationDuration =
+      (3 + Math.random() * 3) + "s";
+    emoji.style.animationDelay =
+      Math.random() * 1.5 + "s";
+
+    document.body.appendChild(emoji);
+
+    setTimeout(() => {
+      emoji.remove();
+    }, 6500);
+  }
+}
+
+</script>
+
+</body>
+</html>
